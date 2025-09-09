@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPTV Marcelo Premium</title>
+
+<!-- Favicon -->
+<link rel="icon" href="sua-imagem.png" type="image/png">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+body { background:#0a0a0a; color:#f0f0f0; line-height:1.6; scroll-behavior:smooth; }
+header { background:linear-gradient(90deg,#ff416c,#ff4b2b); padding:60px 20px; text-align:center; position:relative; }
+header img.logo { max-width:150px; margin-bottom:20px; border-radius:15px; border:3px solid #fff; }
+header h1 { font-size:3em; margin-bottom:10px; color:#fff; animation:fadeInDown 1s ease-in; }
+header p { font-size:1.3em; color:#fff; animation:fadeInUp 1s ease-in; }
+nav { display:flex; justify-content:center; gap:20px; margin-top:30px; flex-wrap:wrap; }
+nav a { color:#fff; text-decoration:none; font-weight:700; padding:12px 20px; border-radius:30px; transition:0.3s; }
+nav a:hover { background:#fff; color:#ff416c; }
+@keyframes fadeInDown { 0%{opacity:0; transform:translateY(-30px);} 100%{opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { 0%{opacity:0; transform:translateY(30px);} 100%{opacity:1; transform:translateY(0);} }
+.container { width:90%; max-width:1200px; margin:50px auto; }
+section { margin-bottom:80px; }
+h2 { text-align:center; font-size:2.5em; margin-bottom:40px; color:#ff416c; }
+.plans { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+.plan { background:#1a1a1a; padding:30px; border-radius:20px; width:300px; text-align:center; transition:0.3s; position:relative; overflow:hidden; }
+.plan:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(255,65,108,0.5); }
+.plan img { width:60px; margin-bottom:15px; }
+.plan h3 { font-size:1.8em; margin-bottom:15px; color:#ff4b2b; }
+.plan p { font-size:1.2em; margin-bottom:20px; }
+.btn { display:inline-block; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:700; transition:0.3s; }
+.btn-whatsapp { background:#25D366; color:white; }
+.btn-whatsapp:hover { background:#1ebe5d; }
+.features { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px; }
+.feature { background:#1a1a1a; padding:20px; border-radius:15px; width:250px; text-align:center; transition:0.3s; }
+.feature img { width:50px; margin-bottom:15px; }
+.feature:hover { transform: scale(1.05); box-shadow:0 10px 30px rgba(255,65,108,0.4); }
+.payment { text-align:center; font-size:1.2em; background:#1a1a1a; padding:30px; border-radius:15px; margin-top:20px; }
+.payment span { font-weight:700; color:#ff416c; }
+.contact { text-align:center; }
+.contact a { margin-top:15px; display:inline-block; }
+.gallery { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.gallery img { width:250px; border-radius:15px; transition:0.3s; }
+.gallery img:hover { transform: scale(1.05); box-shadow:0 10px 30px rgba(255,65,108,0.4); }
+footer { background:#000; color:#fff; text-align:center; padding:25px; font-size:0.9em; }
+@media(max-width:768px){ .plans, .features, .gallery { flex-direction:column; align-items:center; } }
+</style>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="sua-imagem.png" alt="IPTV Marcelo">
+    <h1>IPTV Marcelo Premium</h1>
+    <p>Assista centenas de canais em HD e 4K, de qualquer lugar!</p>
+    <nav>
+        <a href="#planos">Planos</a>
+        <a href="#features">Destaques</a>
+        <a href="#pagamento">Pagamento</a>
+        <a href="#contato">Contato</a>
+        <a href="#gallery">Galeria</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<section id="planos">
+    <h2>Planos Disponíveis</h2>
+    <div class="plans">
+        <div class="plan">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/tv.png" alt="Mensal">
+            <h3>Plano Mensal</h3>
+            <p>R$ 30 / mês</p>
+            <a class="btn btn-whatsapp" href="" id="whatsappPlanoMensal">Comprar via WhatsApp</a>
+        </div>
+        <div class="plan">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/tv.png" alt="Trimestral">
+            <h3>Plano Trimestral</h3>
+            <p>R$ 80 / 3 meses</p>
+            <a class="btn btn-whatsapp" href="" id="whatsappPlanoTrimestral">Comprar via WhatsApp</a>
+        </div>
+        <div class="plan">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/tv.png" alt="Semestral">
+            <h3>Plano Semestral</h3>
+            <p>R$ 150 / 6 meses</p>
+            <a class="btn btn-whatsapp" href="" id="whatsappPlanoSemestral">Comprar via WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Destaques do IPTV</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/live-tv.png" alt="Canais HD">
+            <h3>Canais HD e 4K</h3>
+        </div>
+        <div class="feature">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/device.png" alt="Acessível">
+            <h3>Assista de qualquer dispositivo</h3>
+        </div>
+        <div class="feature">
+            <img src="https://img.icons8.com/ios-filled/50/ff4b2b/lock.png" alt="Seguro">
+            <h3>Pagamento seguro via Pix</h3>
+        </div>
+    </div>
+</section>
+
+<section id="pagamento">
+    <h2>Pagamento via Pix</h2>
+    <div class="payment">
+        Chave Pix: <span id="pixKey"></span><br>
+        Faça o pagamento e envie o comprovante pelo WhatsApp.
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <div class="contact">
+        <p>Fale conosco diretamente pelo WhatsApp:</p>
+        <a href="" id="whatsappContato" class="btn btn-whatsapp">Enviar Mensagem</a>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galeria do IPTV</h2>
+    <div class="gallery">
+        <img src="https://img.icons8.com/color/250/000000/tv.png" alt="Screenshot 1">
+        <img src="https://img.icons8.com/color/250/000000/tv.png" alt="Screenshot 2">
+        <img src="https://img.icons8.com/color/250/000000/tv.png" alt="Screenshot 3">
+    </div>
+</section>
+
+</div>
+
+<footer>
+    &copy; 2025 IPTV Marcelo Premium | Todos os direitos reservados
+</footer>
+
+<script>
+// ===== Dados editáveis =====
+const whatsappNumber = "47984432759"; // Seu WhatsApp
+const pixKey = "47984432759"; // Seu Pix
+
+// Links WhatsApp
+document.getElementById("whatsappPlanoMensal").href = `https://wa.me/${whatsappNumber}?text=Quero%20comprar%20o%20Plano%20Mensal`;
+document.getElementById("whatsappPlanoTrimestral").href = `https://wa.me/${whatsappNumber}?text=Quero%20comprar%20o%20Plano%20Trimestral`;
+document.getElementById("whatsappPlanoSemestral").href = `https://wa.me/${whatsappNumber}?text=Quero%20comprar%20o%20Plano%20Semestral`;
+document.getElementById("whatsappContato").href = `https://wa.me/${whatsappNumber}`;
+
+// Pix
+document.getElementById("pixKey").innerText = pixKey;
+</script>
+
+</body>
+</html>
